@@ -4,8 +4,8 @@ import argparse
 import numpy as np 
 from scipy.sparse import lil_matrix
 
-from plsbm_vem import PLSBM_VEM
-from sbm_vem import SBM_VEM
+from lib.plsbm_vem import PLSBM_VEM
+from lib.sbm_vem import SBM_VEM
 
 def load_labels(filepath):
     assign = np.genfromtxt(filepath, dtype=int)
