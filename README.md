@@ -52,17 +52,31 @@ Label ids are zero-based.
 
 The i-th line contains the label id of the node i.
 
+For unlabeled nodes, label ids will be -1.
+
 ```
 $ cat label.dat
 0
-1
+-1
 1
 2
-0
+-1
 ```
 
-In this case, for example, node 3 has label 2.
+In this case, for example, node 3 has label 2, and node 4 is unlabeled.
 
+## Output
+
+main.py outputs the predicted labels for all nodes (including labeled nodes) by tarined model.
+
+```
+$ cat result.dat
+0
+0
+1
+2
+1
+```
 
 ## Reference
 Yuto Yamaguchi, Kohei Hayashi, "When Does Label Propagation Fail? A View from a Network Generative Model", International Joint Conference on Artificial Intelligence (IJCAI), Melbourne, Australia, Aug 19-25, 2017.
