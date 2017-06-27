@@ -26,7 +26,7 @@ optional arguments:
   -e EPS, --eps EPS     threshold of residual error for convergence
 ```
 
-## Input grpah file
+## Input graph file
 
 The input graph file is the edge list separated by space.
 
